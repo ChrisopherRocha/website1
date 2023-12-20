@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#landing-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.landing-heading {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 15px;
+}
+
+
+/* navbar */
+.nav {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    /* transform: translate(x, y); */
+    transform: translate(-50%, 0);
+}
+
+.nav ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav ul li {
+    font-size: 2.5em;
+    list-style: none;
+    margin: 0 45px;
+    color: white;
+    font-weight: bolder;
+}
+
+.nav ul li:hover {
+    color: red;
+    transition: all .4s;
+}
+
+.tequila {
+    color: turquoise;
+}
+
+
+/* Section two */
+/* Section two */
+/* Section two */
+/* Section two */
+/* Section two */
+/* Section two */
+/* Section two */
+/* Section two */
+.section-two {
+    width: 100%;
+    height: 100vh;
+    background-color:  coral;
+}
+
+.row-one {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+}
+
+
+
+.row-two {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+}
+
+
+.row-one div:first-child {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    background-image: url("https://images.pexels.com/photos/19480465/pexels-photo-19480465/free-photo-of-woman-sitting-on-a-stone-bench-on-a-square.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.row-one div:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    background-image: url("https://images.pexels.com/photos/19476145/pexels-photo-19476145/free-photo-of-woman-on-a-rocky-beach-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.row-two div:first-child {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    background-image: url("https://images.pexels.com/photos/1080666/pexels-photo-1080666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+}
+
+.row-two div:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    background-image: url("https://images.pexels.com/photos/16785476/pexels-photo-16785476/free-photo-of-a-woman-posing-on-a-bench-in-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+/* third row */
+
+.row-three {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+}
+
+.row-three div:first-child {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    background-image: url("https://images.pexels.com/photos/2294424/pexels-photo-2294424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.row-three div:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;
+    background-image: url("https://images.pexels.com/photos/8040961/pexels-photo-8040961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+}
+
+
+
+/* rows text */
+
+.row-one .left {
+    position: relative;
+    
+}
+
+.left h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    font-size: 5em;
+    color: red;
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 120px;
+    font-weight: bolder;
+    background-image: url('https://images.pexels.com/photos/3427713/pexels-photo-3427713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.row-one .right {
+    position: relative;
+}
+
+.right h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    font-size: 5em;
+    color: white;
+    text-align: left;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 120px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: lightpink;
+}
+
+
+/* basically, we need position relative along with position
+absolute.
+
+lets say position relative is the container. 
+and position absolute is the item placed in a specific location.
+
+Relative to the container.
+
+in this case, the container is ".left"*/
